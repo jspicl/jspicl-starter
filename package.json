@@ -1,0 +1,29 @@
+{
+  "name": "jspicl-starter",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/jspicl/jspicl-starter"
+  },
+  "description": "",
+  "scripts": {
+    "restore-cart": "cross-env copyfiles game.p8 build",
+    "prebuild": "npm run restore-cart -- -s",
+    "build": "jspicl-cli --input src/index.js --output build/game.p8 --spritesheetImagePath spritesheet.png --cartridgePath build/game.p8",
+    "start": "npm run build -s -- --watch --jsOutput --luaOutput --prettify=false"
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "author": "Agron Kabashi",
+  "license": "MIT",
+  "devDependencies": {
+    "@agronkabashi/eslint-config": "^1.1.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "chokidar": "^3.2.1",
+    "copyfiles": "^2.1.1",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "jspicl-cli": "^0.3.0"
+  }
+}
