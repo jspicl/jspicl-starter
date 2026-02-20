@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "build",
+    "rootDir": "src"
+  },
+  "include": ["src", "node_modules/@jspicl/core/global-types/pico8-api.d.ts"],
+  "exclude": ["build"]
+}
