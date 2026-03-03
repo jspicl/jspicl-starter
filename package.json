@@ -14,8 +14,9 @@
   },
   "author": "Agron Kabashi",
   "license": "MIT",
+  "homepage": "https://jspicl.github.io",
   "devDependencies": {
-    "@jspicl/cli": "^4.0.2",
+    "@jspicl/cli": "^4.0.3",
     "copyfiles": "^2.4.1",
     "cross-env": "^10.1.0"
   },
